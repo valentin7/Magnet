@@ -12,5 +12,56 @@ body{
 	height: 100%; 
 	float: left; 
 	background-color: #1d1e20;
-	position:absolute;
+	position: absolute;
+}
+
+img.logo {
+	display:block;
+	margin-left:  auto;
+    margin-right:  auto;
+    height: 35px;
+    margin-top: 30px;
+}
+
+#search {
+	margin-left: auto;
+    margin-right:  auto;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    text-align:center;
+    text-decoration: none;
+}
+
+#sidebar_query_small {
+	padding: 8px 29px;
+	border:0px; 
+	background: url(http://i.imgur.com/NhAHvr3.png) no-repeat 8px center;
+    background-size: 15px;
+    font-size:13px; color:gray;
+    background-color: #282828; 
+	border-color: #282828;
+	box-shadow:none;
+	outline: none;
+}
+
+img.magnet {
+	display:block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 50px;
+}
+
+#footer {
+	margin-left: auto;
+	margin-right: auto;
+	position: relative;
+	text-align: center;
+	padding-top: 5px;
+	color: #5a5a5a;;
+}
+
+#center {
+	padding-left: 250px;
+	height: 100%;
+	background-color: white;
 }

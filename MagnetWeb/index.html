@@ -4,15 +4,34 @@
 		<meta charset="utf-8">
 		<title>Magnet</title>
 		<link rel="stylesheet" type="text/css" href="css/index.css" media = "all"/>
-		<link href='imgs/favicon.png' rel='shortcut icon' type='imgs/favicon'>
+		<link href='imgs/magnet_favicon.png' rel='shortcut icon' type='image/x-icon'>
 	</head>
 	<body>
 		<div id = "content"> 
+
 			<div id = "left">
 				<div id = "logo">
-					<img class = "logo" src = "imgs/logo"> 
+					<img class = "logo" src = "imgs/magnet_logo_word.png"> 
 				</div>
+
+				<div id = "search">
+        		<form action='/search' id='sidebar_search_small' method='get'>
+       	 			<input autocomplete='off' class='search_input' id='sidebar_query_small' name='query' placeholder='Search' tabindex=''>
+        		</form>
+      			</div>
+
+      			<img class = "magnet" src ="imgs/magnet_favicon.png" height ="25">
+      			
+      			<div id =  "footer">
+        			Crowdsourcing the struggle bus
+      			</div>
+
 			</div>
+
+			<div id = "center">
+				
+			</div>
+
 		</div>
 	</body>
 </html>
