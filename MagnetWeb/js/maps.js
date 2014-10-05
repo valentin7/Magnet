@@ -1,69 +1,145 @@
+
+
+// var markers = [];
+// var map;
+// var brownUniversity = new google.maps.LatLng(41.8262, -71.4032);
+
+// var MY_MAPTYPE_ID = 'style';
+
 // function initialize() {
+
+
+//      // This event listener will call addMarker() when the map is clicked.
+//      google.maps.event.addListener(map, 'click', function(event) {
+//        addMarker(event.:atLng);
+//      });
+
 //   var mapOptions = {
-//     zoom: 8,
-//     center: new google.maps.LatLng(-34.397, 150.644)
+//     zoom: 14,
+//     center: brownUniversity,
+//     mapTypeControlOptions: {
+//       mapTypeIds: [google.maps.MapTypeId.ROADMAP, MY_MAPTYPE_ID]
+//     },
+//     mapTypeId: MY_MAPTYPE_ID
 //   };
 
-//   var map = new google.maps.Map(document.getElementById('center'),
+//   map = new google.maps.Map(document.getElementById('center'),
 //       mapOptions);
+
+//   var styledMapOptions = {
+//     name: 'Style'
+//   };
+
+//   var customMapType = new google.maps.StyledMapType(featureOpts, styledMapOptions);
+
+//   map.mapTypes.set(MY_MAPTYPE_ID, customMapType);
+
+//   addMarker(brownUniversity);
 // }
 
-// function loadScript() {
-//   var script = document.createElement('script');
-//   console.log("kwjehgrd");
-//   script.type = 'text/javascript';
-//   script.src = 'https://maps.googleapis.com/maps/api/js?key=AIzaSyAsY5oasY4CF9Oq9Eu2U2dekHXJEuLHvH4' +
-//       'callback=initialize';
-//   document.body.appendChild(script);
-// }
+//   // Add a marker to the map and push to the array.
 
-// window.onload = loadScript;
+//      function addMarker(location) {
+//        var marker = new google.maps.Marker({
+//          position: location,
+//          map: map
+//        });
+//        markers.push(marker);
+//      }
+
+//      // Sets the map on all markers in the array.
+//      function setAllMap(map) {
+//        for (var i = 0; i < markers.length; i++) {
+//          markers[i].setMap(map);
+//        }
+//      }
+
+//      // Removes the markers from the map, but keeps them in the array.
+//      function clearMarkers() {
+//        setAllMap(null);
+//      }
+//      // Shows any markers currently in the array.
+//      function showMarkers() {
+//        setAllMap(map);
+//      }
+
+//      // Deletes all markers in the array by removing references to them.
+//      function deleteMarkers() {
+//        clearMarkers();
+//        markers = [];
+//      }
+
+// google.maps.event.addDomListener(window, 'load', initialize);
+
 
 
 var map;
-var brownUniversity = new google.maps.LatLng(41.8262, -71.4032);
-
+var markers = [];
 var MY_MAPTYPE_ID = 'style';
 
 function initialize() {
-
-  var featureOpts = [
-    {
-      stylers: [
-        { hue: '#555555' },
-      	{ lightness: 50},
-        { visibility: 'simplified' },
-        {gamma: 0.5},
-        { weight: 0.5 }
-      ]
-    },
-    {
-      elementType: 'labels',
-      stylers: [
-        { visibility: 'on' }
-      ]
-    },
-      ];
-
+	var featureOpts = [
+	  {
+	    stylers: [
+	      { hue: '#555555' },
+	    	{ lightness: 50},
+	      { visibility: 'simplified' },
+	      {gamma: 0.5},
+	      { weight: 0.5 }
+	    ]
+	  },
+	  {
+	    elementType: 'labels',
+	    stylers: [
+	      { visibility: 'on' }
+	    ]
+	  },
+	    ];
+  var brownUniversity = new google.maps.LatLng(41.8262, -71.4032);
   var mapOptions = {
-    zoom: 14,
+    zoom: 12,
     center: brownUniversity,
-    mapTypeControlOptions: {
-      mapTypeIds: [google.maps.MapTypeId.ROADMAP, MY_MAPTYPE_ID]
-    },
-    mapTypeId: MY_MAPTYPE_ID
+    mapTypeId: google.maps.MapTypeId.TERRAIN
   };
-
   map = new google.maps.Map(document.getElementById('center'),
       mapOptions);
 
-  var styledMapOptions = {
-    name: 'Style'
-  };
+  // This event listener will call addMarker() when the map is clicked.
+  google.maps.event.addListener(map, 'click', function(event) {
+    addMarker(event.latLng);
+  });
+}
 
-  var customMapType = new google.maps.StyledMapType(featureOpts, styledMapOptions);
+// Add a marker to the map and push to the array.
+function addMarker(location) {
+  var marker = new google.maps.Marker({
+    position: location,
+    map: map
+  });
+  markers.push(marker);
+}
 
-  map.mapTypes.set(MY_MAPTYPE_ID, customMapType);
+// Sets the map on all markers in the array.
+function setAllMap(map) {
+  for (var i = 0; i < markers.length; i++) {
+    markers[i].setMap(map);
+  }
+}
+
+// Removes the markers from the map, but keeps them in the array.
+function clearMarkers() {
+  setAllMap(null);
+}
+
+// Shows any markers currently in the array.
+function showMarkers() {
+  setAllMap(map);
+}
+
+// Deletes all markers in the array by removing references to them.
+function deleteMarkers() {
+  clearMarkers();
+  markers = [];
 }
 
 google.maps.event.addDomListener(window, 'load', initialize);

@@ -15,12 +15,13 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 
         <script type = "text/javascript" src= "js/maps.js" ></script>
+        <script type = "text/javascript" src = "js/semantic.js"></script>
 
     </head>
     <body>
         <div id = "content"> 
 
-            <div id = "left">
+            <div id = "ui sidebar"  style=" width: 210px; height: 100%; float: left; background-color: #1d1e20; position: absolute">
                 <div id = "logo">
                     <img class = "logo" src = "imgs/magnet_logo_word.png"> 
                 </div>
@@ -56,6 +57,19 @@
 
             <div id = "center"></div>
 
-        </div>
+     </div>
+            <script> 
+         $('.sidebar').first()
+         .sidebar('attach events', '.toggle.button');
+            $('.toggle.button')
+            .removeClass('disabled');
+        $('.ui.modal')
+          .modal()
+        ;
+        </script>
+
+
     </body>
+
+    
 </html>
