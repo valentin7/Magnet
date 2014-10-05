@@ -1,0 +1,42 @@
+PODS:
+  - AFNetworking (2.2.4):
+    - AFNetworking/NSURLConnection
+    - AFNetworking/NSURLSession
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+    - AFNetworking/UIKit
+  - AFNetworking/NSURLConnection (2.2.4):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/NSURLSession (2.2.4):
+    - AFNetworking/NSURLConnection
+  - AFNetworking/Reachability (2.2.4)
+  - AFNetworking/Security (2.2.4)
+  - AFNetworking/Serialization (2.2.4)
+  - AFNetworking/UIKit (2.2.4):
+    - AFNetworking/NSURLConnection
+    - AFNetworking/NSURLSession
+  - libPusher (1.5):
+    - libPusher/Core
+  - libPusher/Core (1.5):
+    - SocketRocket (= 0.3.1-beta2)
+  - MBProgressHUD (0.9)
+  - REFrostedViewController (2.4.7)
+  - SocketRocket (0.3.1-beta2)
+
+DEPENDENCIES:
+  - AFNetworking (~> 2.2.4)
+  - libPusher (~> 1.4)
+  - MBProgressHUD (~> 0.8)
+  - REFrostedViewController (~> 2.4.5)
+
+SPEC CHECKSUMS:
+  AFNetworking: ab63e259fe91eef4519b371ef0a4955af0e73e64
+  libPusher: 583326327a72ab7cd0f38692f61f9061cf4be3d9
+  MBProgressHUD: 2038dbcf3dce73215abed6001657043d53aa79a8
+  REFrostedViewController: 08870a24788191339608b80b2bd4fce549858f0d
+  SocketRocket: 79a68ae186063c65e1fe6f638b1ae2927aa5f304
+
+COCOAPODS: 0.33.1

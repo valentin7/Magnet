@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5954B85A19E0B8920049E6D8 /* SignUpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5954B85919E0B8920049E6D8 /* SignUpViewController.m */; };
+		5954B85D19E0BAEA0049E6D8 /* NavigationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5954B85C19E0BAEA0049E6D8 /* NavigationViewController.m */; };
 		596FE16419E0865300102677 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 596FE16319E0865300102677 /* main.m */; };
 		596FE16719E0865300102677 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 596FE16619E0865300102677 /* AppDelegate.m */; };
 		596FE16A19E0865300102677 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 596FE16919E0865300102677 /* ViewController.m */; };
@@ -14,6 +16,34 @@
 		596FE16F19E0865300102677 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 596FE16E19E0865300102677 /* Images.xcassets */; };
 		596FE17219E0865300102677 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 596FE17019E0865300102677 /* LaunchScreen.xib */; };
 		596FE17E19E0865300102677 /* MagnetTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 596FE17D19E0865300102677 /* MagnetTests.m */; };
+		596FE18819E08E7F00102677 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 596FE18719E08E7F00102677 /* Parse.framework */; };
+		596FE19619E0906F00102677 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 596FE18919E0906F00102677 /* AudioToolbox.framework */; };
+		596FE19719E0906F00102677 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 596FE18A19E0906F00102677 /* CFNetwork.framework */; };
+		596FE19819E0906F00102677 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 596FE18B19E0906F00102677 /* CoreGraphics.framework */; };
+		596FE19919E0906F00102677 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 596FE18C19E0906F00102677 /* CoreLocation.framework */; };
+		596FE19A19E0906F00102677 /* libz.1.1.3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 596FE18D19E0906F00102677 /* libz.1.1.3.dylib */; };
+		596FE19B19E0906F00102677 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 596FE18E19E0906F00102677 /* libz.dylib */; };
+		596FE19C19E0906F00102677 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 596FE18F19E0906F00102677 /* MobileCoreServices.framework */; };
+		596FE19D19E0906F00102677 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 596FE19019E0906F00102677 /* QuartzCore.framework */; };
+		596FE19E19E0906F00102677 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 596FE19119E0906F00102677 /* Security.framework */; };
+		596FE19F19E0906F00102677 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 596FE19219E0906F00102677 /* Social.framework */; };
+		596FE1A119E0906F00102677 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 596FE19419E0906F00102677 /* SystemConfiguration.framework */; };
+		596FE1A219E0906F00102677 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 596FE19519E0906F00102677 /* UIKit.framework */; };
+		596FE1A519E0916200102677 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 596FE1A419E0916200102677 /* RootViewController.m */; };
+		596FE1A819E092AC00102677 /* MenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 596FE1A719E092AC00102677 /* MenuViewController.m */; };
+		596FE1AA19E095F300102677 /* IconMenuBurger@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 596FE1A919E095F300102677 /* IconMenuBurger@2x.png */; };
+		596FE1AC19E098D800102677 /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 596FE1AB19E098D800102677 /* Accounts.framework */; };
+		596FE1AE19E0991100102677 /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 596FE1AD19E0991100102677 /* FacebookSDK.framework */; };
+		596FE1B119E0A55B00102677 /* ClassTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 596FE1B019E0A55B00102677 /* ClassTableViewCell.m */; };
+		59D7EB0A19E0CEE40034627E /* MakeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 59D7EB0919E0CEE40034627E /* MakeViewController.m */; };
+		59D7EB0F19E0D1DC0034627E /* PresentDetailTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 59D7EB0C19E0D1DC0034627E /* PresentDetailTransition.m */; };
+		59D7EB1019E0D1DC0034627E /* DismissDetailTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 59D7EB0E19E0D1DC0034627E /* DismissDetailTransition.m */; };
+		59D7EB1219E102080034627E /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 59D7EB1119E102080034627E /* MapKit.framework */; };
+		59D7EB1519E102DA0034627E /* MapPoint.m in Sources */ = {isa = PBXBuildFile; fileRef = 59D7EB1419E102DA0034627E /* MapPoint.m */; };
+		59D7EB1A19E12ECC0034627E /* UserManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 59D7EB1919E12ECC0034627E /* UserManager.m */; };
+		59D7EB1C19E135DC0034627E /* magnet_logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 59D7EB1B19E135DC0034627E /* magnet_logo.png */; };
+		59D7EB1E19E146250034627E /* Icon-Small.png in Resources */ = {isa = PBXBuildFile; fileRef = 59D7EB1D19E146250034627E /* Icon-Small.png */; };
+		6DC1C73810A745DBB7F5A5D5 /* libPods-Magnet.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6C2ECA07B8B144D18B5774CD /* libPods-Magnet.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,6 +57,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5954B85819E0B8920049E6D8 /* SignUpViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SignUpViewController.h; sourceTree = "<group>"; };
+		5954B85919E0B8920049E6D8 /* SignUpViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SignUpViewController.m; sourceTree = "<group>"; };
+		5954B85B19E0BAEA0049E6D8 /* NavigationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NavigationViewController.h; sourceTree = "<group>"; };
+		5954B85C19E0BAEA0049E6D8 /* NavigationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NavigationViewController.m; sourceTree = "<group>"; };
 		596FE15E19E0865300102677 /* Magnet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Magnet.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		596FE16219E0865300102677 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		596FE16319E0865300102677 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -40,6 +74,43 @@
 		596FE17719E0865300102677 /* MagnetTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MagnetTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		596FE17C19E0865300102677 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		596FE17D19E0865300102677 /* MagnetTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MagnetTests.m; sourceTree = "<group>"; };
+		596FE18719E08E7F00102677 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
+		596FE18919E0906F00102677 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		596FE18A19E0906F00102677 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		596FE18B19E0906F00102677 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		596FE18C19E0906F00102677 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		596FE18D19E0906F00102677 /* libz.1.1.3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.1.1.3.dylib; path = usr/lib/libz.1.1.3.dylib; sourceTree = SDKROOT; };
+		596FE18E19E0906F00102677 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		596FE18F19E0906F00102677 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		596FE19019E0906F00102677 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		596FE19119E0906F00102677 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		596FE19219E0906F00102677 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
+		596FE19419E0906F00102677 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		596FE19519E0906F00102677 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		596FE1A319E0916200102677 /* RootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
+		596FE1A419E0916200102677 /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
+		596FE1A619E092AC00102677 /* MenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuViewController.h; sourceTree = "<group>"; };
+		596FE1A719E092AC00102677 /* MenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuViewController.m; sourceTree = "<group>"; };
+		596FE1A919E095F300102677 /* IconMenuBurger@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "IconMenuBurger@2x.png"; sourceTree = "<group>"; };
+		596FE1AB19E098D800102677 /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
+		596FE1AD19E0991100102677 /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FacebookSDK.framework; sourceTree = "<group>"; };
+		596FE1AF19E0A55B00102677 /* ClassTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClassTableViewCell.h; sourceTree = "<group>"; };
+		596FE1B019E0A55B00102677 /* ClassTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClassTableViewCell.m; sourceTree = "<group>"; };
+		59D7EB0819E0CEE40034627E /* MakeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MakeViewController.h; sourceTree = "<group>"; };
+		59D7EB0919E0CEE40034627E /* MakeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MakeViewController.m; sourceTree = "<group>"; };
+		59D7EB0B19E0D1DC0034627E /* PresentDetailTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PresentDetailTransition.h; sourceTree = "<group>"; };
+		59D7EB0C19E0D1DC0034627E /* PresentDetailTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PresentDetailTransition.m; sourceTree = "<group>"; };
+		59D7EB0D19E0D1DC0034627E /* DismissDetailTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DismissDetailTransition.h; sourceTree = "<group>"; };
+		59D7EB0E19E0D1DC0034627E /* DismissDetailTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DismissDetailTransition.m; sourceTree = "<group>"; };
+		59D7EB1119E102080034627E /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		59D7EB1319E102DA0034627E /* MapPoint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapPoint.h; sourceTree = "<group>"; };
+		59D7EB1419E102DA0034627E /* MapPoint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapPoint.m; sourceTree = "<group>"; };
+		59D7EB1819E12ECC0034627E /* UserManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserManager.h; sourceTree = "<group>"; };
+		59D7EB1919E12ECC0034627E /* UserManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserManager.m; sourceTree = "<group>"; };
+		59D7EB1B19E135DC0034627E /* magnet_logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = magnet_logo.png; sourceTree = "<group>"; };
+		59D7EB1D19E146250034627E /* Icon-Small.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Small.png"; sourceTree = "<group>"; };
+		6C2ECA07B8B144D18B5774CD /* libPods-Magnet.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Magnet.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B4396D3C6A0546C6ADDC9EB9 /* Pods-Magnet.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Magnet.xcconfig"; path = "Pods/Pods-Magnet.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +118,23 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				59D7EB1219E102080034627E /* MapKit.framework in Frameworks */,
+				596FE1AC19E098D800102677 /* Accounts.framework in Frameworks */,
+				596FE19619E0906F00102677 /* AudioToolbox.framework in Frameworks */,
+				596FE19719E0906F00102677 /* CFNetwork.framework in Frameworks */,
+				596FE19819E0906F00102677 /* CoreGraphics.framework in Frameworks */,
+				596FE19919E0906F00102677 /* CoreLocation.framework in Frameworks */,
+				596FE19A19E0906F00102677 /* libz.1.1.3.dylib in Frameworks */,
+				596FE19B19E0906F00102677 /* libz.dylib in Frameworks */,
+				596FE19C19E0906F00102677 /* MobileCoreServices.framework in Frameworks */,
+				596FE1AE19E0991100102677 /* FacebookSDK.framework in Frameworks */,
+				596FE19D19E0906F00102677 /* QuartzCore.framework in Frameworks */,
+				596FE19E19E0906F00102677 /* Security.framework in Frameworks */,
+				596FE19F19E0906F00102677 /* Social.framework in Frameworks */,
+				596FE1A119E0906F00102677 /* SystemConfiguration.framework in Frameworks */,
+				596FE1A219E0906F00102677 /* UIKit.framework in Frameworks */,
+				596FE18819E08E7F00102677 /* Parse.framework in Frameworks */,
+				6DC1C73810A745DBB7F5A5D5 /* libPods-Magnet.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -60,12 +148,38 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4EC40B3FADDE4E239A01871E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				59D7EB1119E102080034627E /* MapKit.framework */,
+				596FE1AD19E0991100102677 /* FacebookSDK.framework */,
+				596FE1AB19E098D800102677 /* Accounts.framework */,
+				596FE18919E0906F00102677 /* AudioToolbox.framework */,
+				596FE18A19E0906F00102677 /* CFNetwork.framework */,
+				596FE18B19E0906F00102677 /* CoreGraphics.framework */,
+				596FE18C19E0906F00102677 /* CoreLocation.framework */,
+				596FE18D19E0906F00102677 /* libz.1.1.3.dylib */,
+				596FE18E19E0906F00102677 /* libz.dylib */,
+				596FE18F19E0906F00102677 /* MobileCoreServices.framework */,
+				596FE19019E0906F00102677 /* QuartzCore.framework */,
+				596FE19119E0906F00102677 /* Security.framework */,
+				596FE19219E0906F00102677 /* Social.framework */,
+				596FE19419E0906F00102677 /* SystemConfiguration.framework */,
+				596FE19519E0906F00102677 /* UIKit.framework */,
+				596FE18719E08E7F00102677 /* Parse.framework */,
+				6C2ECA07B8B144D18B5774CD /* libPods-Magnet.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		596FE15519E0865300102677 = {
 			isa = PBXGroup;
 			children = (
 				596FE16019E0865300102677 /* Magnet */,
 				596FE17A19E0865300102677 /* MagnetTests */,
 				596FE15F19E0865300102677 /* Products */,
+				B4396D3C6A0546C6ADDC9EB9 /* Pods-Magnet.xcconfig */,
+				4EC40B3FADDE4E239A01871E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -83,9 +197,25 @@
 			children = (
 				596FE16519E0865300102677 /* AppDelegate.h */,
 				596FE16619E0865300102677 /* AppDelegate.m */,
+				59D7EB1819E12ECC0034627E /* UserManager.h */,
+				59D7EB1919E12ECC0034627E /* UserManager.m */,
+				596FE1AF19E0A55B00102677 /* ClassTableViewCell.h */,
+				59D7EB1719E102EB0034627E /* Transitions */,
+				596FE1B019E0A55B00102677 /* ClassTableViewCell.m */,
 				596FE16819E0865300102677 /* ViewController.h */,
 				596FE16919E0865300102677 /* ViewController.m */,
+				59D7EB1619E102E10034627E /* Others */,
 				596FE16B19E0865300102677 /* Main.storyboard */,
+				59D7EB0819E0CEE40034627E /* MakeViewController.h */,
+				59D7EB0919E0CEE40034627E /* MakeViewController.m */,
+				5954B85819E0B8920049E6D8 /* SignUpViewController.h */,
+				5954B85919E0B8920049E6D8 /* SignUpViewController.m */,
+				5954B85B19E0BAEA0049E6D8 /* NavigationViewController.h */,
+				5954B85C19E0BAEA0049E6D8 /* NavigationViewController.m */,
+				596FE1A619E092AC00102677 /* MenuViewController.h */,
+				596FE1A719E092AC00102677 /* MenuViewController.m */,
+				596FE1A319E0916200102677 /* RootViewController.h */,
+				596FE1A419E0916200102677 /* RootViewController.m */,
 				596FE16E19E0865300102677 /* Images.xcassets */,
 				596FE17019E0865300102677 /* LaunchScreen.xib */,
 				596FE16119E0865300102677 /* Supporting Files */,
@@ -96,6 +226,9 @@
 		596FE16119E0865300102677 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				59D7EB1D19E146250034627E /* Icon-Small.png */,
+				596FE1A919E095F300102677 /* IconMenuBurger@2x.png */,
+				59D7EB1B19E135DC0034627E /* magnet_logo.png */,
 				596FE16219E0865300102677 /* Info.plist */,
 				596FE16319E0865300102677 /* main.m */,
 			);
@@ -119,6 +252,26 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		59D7EB1619E102E10034627E /* Others */ = {
+			isa = PBXGroup;
+			children = (
+				59D7EB1319E102DA0034627E /* MapPoint.h */,
+				59D7EB1419E102DA0034627E /* MapPoint.m */,
+			);
+			name = Others;
+			sourceTree = "<group>";
+		};
+		59D7EB1719E102EB0034627E /* Transitions */ = {
+			isa = PBXGroup;
+			children = (
+				59D7EB0B19E0D1DC0034627E /* PresentDetailTransition.h */,
+				59D7EB0C19E0D1DC0034627E /* PresentDetailTransition.m */,
+				59D7EB0D19E0D1DC0034627E /* DismissDetailTransition.h */,
+				59D7EB0E19E0D1DC0034627E /* DismissDetailTransition.m */,
+			);
+			name = Transitions;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -126,9 +279,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 596FE18119E0865300102677 /* Build configuration list for PBXNativeTarget "Magnet" */;
 			buildPhases = (
+				DBB2B37EDCE845CFA477452B /* Check Pods Manifest.lock */,
 				596FE15A19E0865300102677 /* Sources */,
 				596FE15B19E0865300102677 /* Frameworks */,
 				596FE15C19E0865300102677 /* Resources */,
+				A02A15D0480C4D3E83A47D63 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -168,6 +323,12 @@
 				TargetAttributes = {
 					596FE15D19E0865300102677 = {
 						CreatedOnToolsVersion = 6.0.1;
+						DevelopmentTeam = S85SP6U6F8;
+						SystemCapabilities = {
+							com.apple.InAppPurchase = {
+								enabled = 0;
+							};
+						};
 					};
 					596FE17619E0865300102677 = {
 						CreatedOnToolsVersion = 6.0.1;
@@ -201,7 +362,10 @@
 			files = (
 				596FE16D19E0865300102677 /* Main.storyboard in Resources */,
 				596FE17219E0865300102677 /* LaunchScreen.xib in Resources */,
+				59D7EB1E19E146250034627E /* Icon-Small.png in Resources */,
 				596FE16F19E0865300102677 /* Images.xcassets in Resources */,
+				596FE1AA19E095F300102677 /* IconMenuBurger@2x.png in Resources */,
+				59D7EB1C19E135DC0034627E /* magnet_logo.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -214,14 +378,57 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		A02A15D0480C4D3E83A47D63 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-Magnet-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DBB2B37EDCE845CFA477452B /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		596FE15A19E0865300102677 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				59D7EB1A19E12ECC0034627E /* UserManager.m in Sources */,
 				596FE16A19E0865300102677 /* ViewController.m in Sources */,
+				59D7EB0A19E0CEE40034627E /* MakeViewController.m in Sources */,
 				596FE16719E0865300102677 /* AppDelegate.m in Sources */,
+				596FE1B119E0A55B00102677 /* ClassTableViewCell.m in Sources */,
+				596FE1A519E0916200102677 /* RootViewController.m in Sources */,
+				59D7EB1519E102DA0034627E /* MapPoint.m in Sources */,
+				5954B85D19E0BAEA0049E6D8 /* NavigationViewController.m in Sources */,
 				596FE16419E0865300102677 /* main.m in Sources */,
+				59D7EB1019E0D1DC0034627E /* DismissDetailTransition.m in Sources */,
+				5954B85A19E0B8920049E6D8 /* SignUpViewController.m in Sources */,
+				596FE1A819E092AC00102677 /* MenuViewController.m in Sources */,
+				59D7EB0F19E0D1DC0034627E /* PresentDetailTransition.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -341,21 +548,39 @@
 		};
 		596FE18219E0865300102677 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B4396D3C6A0546C6ADDC9EB9 /* Pods-Magnet.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = Magnet/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
 		596FE18319E0865300102677 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B4396D3C6A0546C6ADDC9EB9 /* Pods-Magnet.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = Magnet/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
@@ -412,6 +637,7 @@
 				596FE18319E0865300102677 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		596FE18419E0865300102677 /* Build configuration list for PBXNativeTarget "MagnetTests" */ = {
 			isa = XCConfigurationList;
@@ -420,6 +646,7 @@
 				596FE18619E0865300102677 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

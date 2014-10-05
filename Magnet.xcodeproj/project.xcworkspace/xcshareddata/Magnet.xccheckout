@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>C5279A31-1507-4421-8380-8D155D78E575</string>
+	<key>IDESourceControlProjectName</key>
+	<string>Magnet</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>71CAD1FAFEB2015D35DA315169BCFE8FFBE60FD4</key>
+		<string>https://github.com/valentin7/Magnet</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Magnet.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>71CAD1FAFEB2015D35DA315169BCFE8FFBE60FD4</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/valentin7/Magnet</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>71CAD1FAFEB2015D35DA315169BCFE8FFBE60FD4</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>71CAD1FAFEB2015D35DA315169BCFE8FFBE60FD4</string>
+			<key>IDESourceControlWCCName</key>
+			<string>Magnet</string>
+		</dict>
+	</array>
+</dict>
+</plist>
