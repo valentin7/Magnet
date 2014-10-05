@@ -53,6 +53,10 @@ img.logo {
 	margin-bottom: 25px;
 }
 
+#dropdown_uni {
+	display: none;
+}
+
 .tabs:hover {
 	background-color: #131314;
 	margin-left: auto;
