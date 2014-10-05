@@ -6,34 +6,58 @@
 		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3/jquery.min.js"></script>
 		<link rel="stylesheet" type="text/css" href="css/landing.css" media = "all"/>
 		<link href='imgs/magnet_favicon.png' rel='shortcut icon' type='image/x-icon'>
-		<link href="css/semanticUI/semantic.min.css" rel="stylesheet" type="text/css">
-		<link href="css/semanticUI/semantic.css" rel="stylesheet" type="text/css">
+		<link href="semantic/packaged/css/semantic.min.css" rel="stylesheet" type="text/css">
+		<link href="semantic/packaged/css/semantic.css" rel="stylesheet" type="text/css">
 		<script src="js/semantic.min.js"></script>
-  
+  		<script type="text/javascript" src="https://www.parsecdn.com/js/parse-1.2.7.min.js"></script>
 	</head>
 	<body id="login">
+		<div id="fb-root"></div>
 		<script>
+		Parse.initialize('fCRM0CEXdoWkzlEv9QxTZUJKEmVf96Cz4rhsbw7Y', 'fuintiLioLjatdhcsxpcqL4pkISJ7DdU2dWI6vDX');
+
 	      window.fbAsyncInit = function() {
-	        FB.init({
+	        Parse.FacebookUtils.init({
 	          appId      : '214135578760225',
+	          status	 : FB.getLoginStatus(),
+	          cookie	 : true,
 	          xfbml      : true,
 	          version    : 'v2.1'
 	        });
+	        
 	      };
+
+	    $(".ui").click(function() {
+		        Parse.FacebookUtils.logIn(null, {
+				  success: function(user) {
+				    if (!user.existed()) {
+				      alert("User signed up and logged in through Facebook!");
+				    } else {
+				      alert("User logged in through Facebook!");
+				    }
+				  },
+				  error: function(user, error) {
+				    alert("User cancelled the Facebook login or did not fully authorize.");
+				  }
+				});
+	        });
 
 		(function(d, s, id) {
 		  var js, fjs = d.getElementsByTagName(s)[0];
 		  if (d.getElementById(id)) return;
 		  js = d.createElement(s); js.id = id;
-		  js.src = "https://connect.facebook.net/en_US/all.js";
+		  js.src = "https://connect.facebook.net/en_US/all.js&status";
 		  fjs.parentNode.insertBefore(js, fjs);
 		}(document, 'script', 'facebook-jssdk'));
 	    </script>
 
 		<div id="login_content"> 
-			<img src="imgs/magnet_logo.png">
+			<div id="logo">
+				<img class="logo" src="imgs/magnet_logo.png">
+			</div>
 			<div id="form_wrapper">
-			<div class="ui form segment">
+			<form class="login-form" method="post" onsubmit="login()">
+			<div class="ui form segment" style="background-color:#808080">
 		      <div class="field">
 		        <label>Email</label>
 		        <div class="ui left labeled icon input">
@@ -57,8 +81,11 @@
 		      <div class="ui error message">
 		        <div class="header">We noticed some issues</div>
 		      </div>
-		      <div class="ui blue submit button">Signup</div>
-		      <div class="fb-login-button" data-max-rows="1" data-size="medium" data-show-faces="false" data-auto-logout-link="false"></div>
+		      <button class="ui">
+			      <i class="facebook icon"></i>
+			      Facebook Login
+			   </button>
+		      </form>
 		    </div>
 			</div>
 		</div>
