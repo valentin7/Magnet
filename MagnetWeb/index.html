@@ -1,41 +1,50 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<meta charset="utf-8">
-		<title>Magnet</title>
-		<link rel="stylesheet" type="text/css" href="css/index.css" media = "all"/>
-		<link href='imgs/magnet_favicon.png' rel='shortcut icon' type='image/x-icon'>
-	</head>
-	<body>
-		<div id = "content"> 
+    <head>
+        <style type='text/css'>
+          html, body {height: 100%; margin: 0}
+         </style>
+        <meta charset="utf-8">
+        <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+        <title>Magnet</title>
 
-			<div id = "left">
-				<div id = "logo">
-					<img class = "logo" src = "imgs/magnet_logo_word.png"> 
-				</div>
+        <link rel="stylesheet" type="text/css" href="css/index.css" media = "all"/>
+        <link href='imgs/magnet_favicon.png' rel='shortcut icon' type='image/x-icon'>
 
-				<div id = "search">
-        		<form action='/search' id='sidebar_search_small' method='get'>
-       	 			<input autocomplete='off' class='search_input' id='sidebar_query_small' name='query' placeholder='Search' tabindex=''>
-        		</form>
-      			</div>
+        <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAsY5oasY4CF9Oq9Eu2U2dekHXJEuLHvH4"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 
-      			<form action="index.html">
-    				<input type="submit" value="Yay button!">
-				</form>
+        <script type = "text/javascript" src= "js/maps.js" ></script>
 
-      			<img class = "magnet" src ="imgs/magnet_favicon.png" height ="25">
+    </head>
+    <body>
+        <div id = "content"> 
 
-      			<div id = "footer">
-        			...
-      			</div>
+            <div id = "left">
+                <div id = "logo">
+                    <img class = "logo" src = "imgs/magnet_logo_word.png"> 
+                </div>
 
-			</div>
+                <div id = "search">
+                <form action='/search' id='sidebar_search_small' method='get'>
+                    <input autocomplete='off' class='search_input' id='sidebar_query_small' name='query' placeholder='Search' tabindex=''>
+                </form>
+                </div>
 
-			<div id = "center">
+                <form action="index.html">
+                    <input type="submit" value="Yay button!">
+                </form>
 
-			</div>
+                <img class = "magnet" src ="imgs/magnet_favicon.png" height ="25">
 
-		</div>
-	</body>
+                <div id = "footer">
+                    ...
+                </div>
+
+            </div>
+
+            <div id = "center"></div>
+
+        </div>
+    </body>
 </html>

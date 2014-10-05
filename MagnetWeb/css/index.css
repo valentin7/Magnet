@@ -64,7 +64,8 @@ img.magnet {
 }
 
 #center {
-	padding-left: 250px;
+
+	position: relative;
 	height: 100%;
-	background-color: white;
+    margin-left: 250px;
 }
