@@ -21,7 +21,7 @@
 
 
 var map;
-var brooklyn = new google.maps.LatLng(40.6743890, -73.9455);
+var brownUniversity = new google.maps.LatLng(41.8262, -71.4032);
 
 var MY_MAPTYPE_ID = 'style';
 
@@ -46,8 +46,8 @@ function initialize() {
       ];
 
   var mapOptions = {
-    zoom: 5,
-    center: brooklyn,
+    zoom: 14,
+    center: brownUniversity,
     mapTypeControlOptions: {
       mapTypeIds: [google.maps.MapTypeId.ROADMAP, MY_MAPTYPE_ID]
     },

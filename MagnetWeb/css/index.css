@@ -11,7 +11,7 @@ body{
 }
 
 #left {
-	width: 250px;
+	width: 210px;
 	height: 100%; 
 	float: left; 
 	background-color: #1d1e20;
@@ -39,13 +39,23 @@ img.logo {
 	padding: 8px 29px;
 	border:0px; 
 	background: url(http://i.imgur.com/NhAHvr3.png) no-repeat 8px center;
-    background-size: 15px;
-    font-size:13px; color:gray;
+    background-size: 13px;
+    font-size:15px; color:gray;
     background-color: #282828; 
 	border-color: #282828;
 	box-shadow:none;
 	outline: none;
 }
+
+.tabs {
+	margin-left: auto;
+}
+
+.tabs:hover {
+	background-color: #131314;
+	margin-left: auto;
+}
+
 
 img.magnet {
 	display:block;
@@ -67,5 +77,5 @@ img.magnet {
 
 	position: relative;
 	height: 100%;
-    margin-left: 250px;
+    margin-left: 210px;
 }
