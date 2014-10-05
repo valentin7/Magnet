@@ -19,6 +19,7 @@
 	      window.fbAsyncInit = function() {
 	        Parse.FacebookUtils.init({
 	          appId      : '357546351079378',
+
 	          status	 : FB.getLoginStatus(),
 	          cookie	 : true,
 	          xfbml      : true,
@@ -26,6 +27,21 @@
 	        });
 	        
 	      };
+
+	    $(".ui").click(function() {
+		        Parse.FacebookUtils.logIn(null, {
+				  success: function(user) {
+				    if (!user.existed()) {
+				      alert("User signed up and logged in through Facebook!");
+				    } else {
+				      alert("User logged in through Facebook!");
+				    }
+				  },
+				  error: function(user, error) {
+				    alert("User cancelled the Facebook login or did not fully authorize.");
+				  }
+				});
+	        });
 
 
 		(function(d, s, id) {
@@ -41,27 +57,36 @@
 			<div id="logo">
 				<img class="logo" src="imgs/magnet_logo.png">
 			</div>
-
 			<div id="form_wrapper">
-
 			<form class="login-form" method="post" onsubmit="login()">
 			<div class="ui form segment" style="background-color:#808080">
-				<div style="margin:auto" class="ui facebook button">
-			      <i class="facebook icon"></i>
-			      Login
-			   </div>
-				</br>
-				</br>
+		      <div class="field">
+		        <label>Email</label>
+		        <div class="ui left labeled icon input">
+		          <input type="text" placeholder="Email">
+		          <i class="user icon"></i>
+		          <div class="ui corner label">
+		            <i class="icon asterisk"></i>
+		          </div>
+		        </div>
+		      </div>
+		      <div class="field">
+		        <label>Password</label>
+		        <div class="ui left labeled icon input">
+		          <input type="password" placeholder="Password">
+		          <i class="lock icon"></i>
+		          <div class="ui corner label">
+		            <i class="icon asterisk"></i>
+		          </div>
+		        </div>
+		      </div>
 		      <div class="ui error message">
 		        <div class="header">We noticed some issues</div>
 		      </div>
-		      <span class="ui facebook button">
+		      <button class="ui">
 			      <i class="facebook icon"></i>
-			      Signup
-			   </span>
-			   </br>
-			   </br>
-		      
+			      Facebook Login
+			   </button>
 		      </form>
 		    </div>
 			</div>
