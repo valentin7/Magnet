@@ -7,21 +7,23 @@
         <meta charset="utf-8">
         <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
         <title>Magnet</title>
-
+        <script src="http://www.parsecdn.com/js/parse-1.2.19.min.js"></script>
         <link rel="stylesheet" type="text/css" href="css/index.css" media = "all"/>
+
         <link href='imgs/magnet_favicon.png' rel='shortcut icon' type='image/x-icon'>
 
         <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAsY5oasY4CF9Oq9Eu2U2dekHXJEuLHvH4"></script>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-
-        <script type = "text/javascript" src= "js/maps.js" ></script>
         <script type = "text/javascript" src = "js/semantic.js"></script>
+        <script type = "text/javascript" src = "js/semantic.min.js"></script>
+        <script type = "text/javascript" src= "js/maps.js" ></script>
+         <link rel="stylesheet" type="text/css" class="ui" href="css/semanticUI/semantic.min.css">
+         <link rel="stylesheet" type="text/css" href="css/semanticUI/semantic.css">
 
     </head>
     <body>
         <div id = "content"> 
 
-            <div id = "ui sidebar"  style=" width: 210px; height: 100%; float: left; background-color: #1d1e20; position: absolute">
+            <div id = "left"  style=" width: 210px; height: 100%; float: left; background-color: #1d1e20; position: absolute">
                 <div id = "logo">
                     <img class = "logo" src = "imgs/magnet_logo_word.png"> 
                 </div>
@@ -32,9 +34,10 @@
                 </form>
                 </div>
 
-                <div id = "study">
-                <button>STUDY?</button>
+                <div class="ui toggle button">
+                  Study
                 </div>
+
                 <div class ="tabs">
                     <img src = "imgs/magnet_profile (1).png" height = "80">
                 </div>
@@ -63,15 +66,6 @@
             <div id = "center"></div>
 
      </div>
-            <script> 
-         $('.sidebar').first()
-         .sidebar('attach events', '.toggle.button');
-            $('.toggle.button')
-            .removeClass('disabled');
-        $('.ui.modal')
-          .modal()
-        ;
-        </script>
 
 
     </body>

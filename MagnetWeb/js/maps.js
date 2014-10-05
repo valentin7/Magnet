@@ -1,7 +1,9 @@
+
 var map;
 var brownUniversity = new google.maps.LatLng(41.8262, -71.4032);
 var markers = [];
 var MY_MAPTYPE_ID = 'style';
+var infowindow; 
 
 
 function initialize() {
@@ -41,10 +43,10 @@ function initialize() {
       var pos = new google.maps.LatLng(position.coords.latitude,
                                        position.coords.longitude);
 
-      var infowindow = new google.maps.InfoWindow({
+      infowindow = new google.maps.InfoWindow({
         map: map,
         position: pos,
-        content: 'Current Location'
+        content: addMarker(pos)
       });
 
       map.setCenter(pos);
@@ -65,16 +67,19 @@ function initialize() {
   map.mapTypes.set(MY_MAPTYPE_ID, customMapType);
   google.maps.event.addListener(map, 'click', function(event) {
     addMarker(event.latLng);
-  google.maps.event.addListener(document.getElementById('study'), 'click', toggleBounce);
+
+  google.maps.event.addListener(infowindow, 'click', toggleBounce());
+ 
   });
+
 }
 
 function toggleBounce() {
 
-  if (marker.getAnimation() != null) {
-    marker.setAnimation(null);
+  if (infowindow.getAnimation() != null) {
+    infowindow.setAnimation(null);
   } else {
-    marker.setAnimation(google.maps.Animation.BOUNCE);
+    infowindow.setAnimation(google.maps.Animation.BOUNCE);
   }
 }
 
@@ -128,8 +133,6 @@ function deleteMarkers() {
 }
 
 google.maps.event.addDomListener(window, 'load', initialize);
-
-
 
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////
