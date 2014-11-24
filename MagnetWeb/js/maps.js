@@ -1,4 +1,3 @@
-
 var map;
 var brownUniversity = new google.maps.LatLng(41.8262, -71.4032);
 var markers = [];
@@ -13,8 +12,8 @@ function initialize() {
       stylers: [
         { hue: '#555555' },
       	{ lightness: 50},
-        { visibility: 'simplified' },
-        {gamma: 0.5},
+        { visibility: 'simplified'},
+        { gamma: 0.5},
         { weight: 0.5 }
       ]
     },
