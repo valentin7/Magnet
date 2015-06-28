@@ -1,4 +1,3 @@
-
 var map;
 var brownUniversity = new google.maps.LatLng(41.8262, -71.4032);
 var markers = [];
