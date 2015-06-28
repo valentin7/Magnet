@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Magnet</title>
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3/jquery.min.js"></script>
+		<link rel="stylesheet" type="text/css" href="css/landing.css" media = "all"/>
+		<link href='imgs/magnet_favicon.png' rel='shortcut icon' type='image/x-icon'>
+		<link href="css/semanticUI/semantic.min.css" rel="stylesheet" type="text/css">
+		<link href="css/semanticUI/semantic.css" rel="stylesheet" type="text/css">
+		<script src="js/semantic.min.js"></script>
+  
+	</head>
+	<body id="login">
+		<script>
+	      window.fbAsyncInit = function() {
+	        FB.init({
+	          appId      : '214135578760225',
+	          xfbml      : true,
+	          version    : 'v2.1'
+	        });
+	      };
+
+		(function(d, s, id) {
+		  var js, fjs = d.getElementsByTagName(s)[0];
+		  if (d.getElementById(id)) return;
+		  js = d.createElement(s); js.id = id;
+		  js.src = "https://connect.facebook.net/en_US/all.js";
+		  fjs.parentNode.insertBefore(js, fjs);
+		}(document, 'script', 'facebook-jssdk'));
+	    </script>
+
+		<div id="login_content"> 
+			<img src="imgs/magnet_logo.png">
+			<div id="form_wrapper">
+			<div class="ui form segment">
+		      <div class="field">
+		        <label>Email</label>
+		        <div class="ui left labeled icon input">
+		          <input type="text" placeholder="Email">
+		          <i class="user icon"></i>
+		          <div class="ui corner label">
+		            <i class="icon asterisk"></i>
+		          </div>
+		        </div>
+		      </div>
+		      <div class="field">
+		        <label>Password</label>
+		        <div class="ui left labeled icon input">
+		          <input type="password" placeholder="Password">
+		          <i class="lock icon"></i>
+		          <div class="ui corner label">
+		            <i class="icon asterisk"></i>
+		          </div>
+		        </div>
+		      </div>
+		      <div class="ui error message">
+		        <div class="header">We noticed some issues</div>
+		      </div>
+		      <div class="ui blue submit button">Signup</div>
+		      <div class="fb-login-button" data-max-rows="1" data-size="medium" data-show-faces="false" data-auto-logout-link="false"></div>
+		    </div>
+			</div>
+		</div>
+	</body>
+</html>

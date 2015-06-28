@@ -1,0 +1,13 @@
+body {
+	background-color: #2B2B2B;
+}
+
+#login_content {
+	display: block;
+	font-family: "Open Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif/*rtl:prepend:"Droid Arabic Kufi","Droid Sans", */;
+}
+
+#form_wrapper {
+	width: 300px;
+	margin: auto;
+}
